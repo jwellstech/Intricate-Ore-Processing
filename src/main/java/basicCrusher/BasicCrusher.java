@@ -55,62 +55,6 @@ public class BasicCrusher extends Block {
         return Item.getItemFromBlock(this);
     }
 
-//    @Override
-//    public boolean onBlockActivated(
-//          World parWorld, 
-//          BlockPos parBlockPos, 
-//          IBlockState parIBlockState, 
-//          EntityPlayer parPlayer, 
-//          EnumFacing parSide, 
-//          float hitX, 
-//          float hitY, 
-//          float hitZ)
-//    {
-//        if (!parWorld.isRemote)
-//        {
-//            parPlayer.openGui(Intricateoreprocessing.instance, 
-//                  Intricateoreprocessing.GUI_ENUM.BasicCrusher.ordinal(), 
-//                  parWorld, 
-//                  parBlockPos.getX(), 
-//                  parBlockPos.getY(), 
-//                  parBlockPos.getZ()); 
-//        }
-//        
-//        return true;
-//    }
-
-//    @Override
-//    public TileEntity createNewTileEntity(World worldIn, int meta)
-//    {
-     // DEBUG
-//     System.out.println("BlockGrinder createNewTileEntity()");
-//        return new TileEntityBasicCrusher();
-//    }
-
-    
-
-    
-
-//    @Override
-//    public void breakBlock(
-//          World worldIn, 
-//          BlockPos pos, 
-//          IBlockState state)
-//    {
-//        if (!hasTileEntity(null))
-//        {
-//            TileEntity tileentity = worldIn.getTileEntity(pos);
-//
-//            if (tileentity instanceof TileEntityBasicCrusher)
-//            {
-//                InventoryHelper.dropInventoryItems(worldIn, pos, 
-//                      (TileEntityBasicCrusher)tileentity);
-//                worldIn.updateComparatorOutputLevel(pos, this);
-//            }
-//        }
-//
-//        super.breakBlock(worldIn, pos, state);
-//    }
 
     @Override
     @SideOnly(Side.CLIENT)
@@ -118,20 +62,6 @@ public class BasicCrusher extends Block {
     {
         return Item.getItemFromBlock(this);
     }
-
-    
- 
-   
-
-    
-	
-
-	
-	
-	
-	
-	
-	
 
 	@Override
 	public boolean isOpaqueCube() {
@@ -162,13 +92,7 @@ public class BasicCrusher extends Block {
 	            worldIn.spawnParticle(EnumParticleTypes.FLAME, d0 + d3, d1, d2 + d4, 0.0D, 0.0D, 0.0D, new int[0]);
 	            worldIn.spawnParticle(EnumParticleTypes.FLAME, d0 + d4, d1, d2 - d3, 0.0D, 0.0D, 0.0D, new int[0]);
 	            worldIn.spawnParticle(EnumParticleTypes.FLAME, d0 + d4, d1, d2 + d3, 0.0D, 0.0D, 0.0D, new int[0]);
-
-	                
 	            
 	        }
 	    }
 		
-	
-	
-	
-	

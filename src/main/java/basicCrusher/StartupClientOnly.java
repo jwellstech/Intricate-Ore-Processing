@@ -1,45 +1,3 @@
-<<<<<<< HEAD
-package basicCrusher;
-
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.resources.model.ModelResourceLocation;
-import net.minecraft.item.Item;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-
-public class StartupClientOnly {
-
-	public static void preInitClientOnly()
-	{
-		
-	}
-	
-	public static void initClientOnly() {
-		
-		Item itemNewBlock = GameRegistry.findItem("intricateoreprocessing", "basicCrusher");
-		ModelResourceLocation itemModelResourceLocation = new ModelResourceLocation("intricateoreprocessing:basicCrusher", "inventory");
-		final int DEFAULT_ITEM_SUBTYPE = 0;
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(itemNewBlock, DEFAULT_ITEM_SUBTYPE, itemModelResourceLocation);;
-		
-		
-		
-		
-	}
-	
-	
-	public static void postInitClientOnly() {
-		
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}
-=======
 package basicCrusher;
 
 import net.minecraft.client.Minecraft;
@@ -68,21 +26,8 @@ public class StartupClientOnly {
 		final int DEFAULT_ITEM_SUBTYPE2 = 0;
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(itemBasicCrusherLit, DEFAULT_ITEM_SUBTYPE2, itemModelResourceLocationLit);
 		
-		
 	}
-	
-	
+
 	public static void postInitClientOnly() {
-		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
->>>>>>> 353bcad194114ce4cfeaa102bcbe64cd48d589f1

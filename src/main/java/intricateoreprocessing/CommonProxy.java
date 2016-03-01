@@ -1,14 +1,8 @@
-<<<<<<< HEAD
 package intricateoreprocessing;
 
 public abstract class CommonProxy {
 
 	public void preInit() {
-	
-	
-		
-		
-		
 		newBlock.StartupCommon.preInitCommon();
 		poorDiamondOre.StartupCommon.preInitCommon();
 		poorCoalOre.StartupCommon.preInitCommon();
@@ -24,13 +18,7 @@ public abstract class CommonProxy {
 		richLapisOre.StartupCommon.preInitCommon();
 		richGoldOre.StartupCommon.preInitCommon();
 		richRedstoneOre.StartupCommon.preInitCommon();
-		
-		
-		
-		
-		
 	}	
-	
 	
 	public void init() {
 		
@@ -49,14 +37,9 @@ public abstract class CommonProxy {
 		richLapisOre.StartupCommon.initCommon();
 		richGoldOre.StartupCommon.initCommon();
 		richRedstoneOre.StartupCommon.initCommon();
-		
-		
 	}
 	
-	
 	public void postInit() {
-		
-		
 		newBlock.StartupCommon.postInitCommon();
 		poorDiamondOre.StartupCommon.postInitCommon();
 		poorCoalOre.StartupCommon.postInitCommon();
@@ -73,85 +56,4 @@ public abstract class CommonProxy {
 		richGoldOre.StartupCommon.postInitCommon();
 		richRedstoneOre.StartupCommon.postInitCommon();
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 }
-=======
-package intricateoreprocessing;
-
-//import basicCrusher.TileEntityBasicCrusher;
-import net.minecraftforge.fml.common.registry.GameRegistry;
-
-public abstract class CommonProxy {
-
-	//Really no idea here.
-//	NetworkRegistry.INSTANCE.registerGuiHandler(Intricateoreprocessing.instance, 
-//		      new GuiHandler());  
-	
-	
-	public void preInit() {
-	
-	
-//		GameRegistry.registerTileEntity(TileEntityBasicCrusher.class, "tileEntityBasicCrusher");       
-		
-		
-		newBlock.StartupCommon.preInitCommon();
-		poorDiamondOre.StartupCommon.preInitCommon();
-		basicCrusher.StartupCommon.preInitCommon();
-		richDiamondOre.StartupCommon.preInitCommon();
-		richRedstoneOre.StartupCommon.preInitCommon();
-		
-		
-		
-		
-		
-	}	
-	
-	
-	public void init() {
-		
-		newBlock.StartupCommon.initCommon();
-		poorDiamondOre.StartupCommon.initCommon();
-		basicCrusher.StartupCommon.initCommon();
-		richDiamondOre.StartupCommon.initCommon();
-		richRedstoneOre.StartupCommon.initCommon();
-		
-		
-	}
-	
-	
-	public void postInit() {
-		
-		
-		newBlock.StartupCommon.postInitCommon();
-		poorDiamondOre.StartupCommon.postInitCommon();
-		basicCrusher.StartupCommon.postInitCommon();
-		richDiamondOre.StartupCommon.postInitCommon();
-		richRedstoneOre.StartupCommon.postInitCommon();
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-}
->>>>>>> 353bcad194114ce4cfeaa102bcbe64cd48d589f1

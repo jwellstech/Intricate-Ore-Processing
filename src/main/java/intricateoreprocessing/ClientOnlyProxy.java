@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 package intricateoreprocessing;
 
 public class ClientOnlyProxy extends CommonProxy{
@@ -68,44 +67,3 @@ public class ClientOnlyProxy extends CommonProxy{
 	
 	
 }
-=======
-package intricateoreprocessing;
-
-public class ClientOnlyProxy extends CommonProxy{
-
-	public void preInit(){
-		
-		super.preInit();
-		
-		newBlock.StartupClientOnly.preInitClientOnly();
-		poorDiamondOre.StartupClientOnly.preInitClientOnly();
-		basicCrusher.StartupClientOnly.preInitClientOnly();
-		richDiamondOre.StartupClientOnly.preInitClientOnly();
-		richRedstoneOre.StartupClientOnly.preInitClientOnly();
-	}
-	
-	
-	public void init() {
-		
-		super.init();
-		newBlock.StartupClientOnly.initClientOnly();
-		poorDiamondOre.StartupClientOnly.initClientOnly();
-		basicCrusher.StartupClientOnly.initClientOnly();
-		richDiamondOre.StartupClientOnly.initClientOnly();
-		richRedstoneOre.StartupClientOnly.initClientOnly();
-	}
-	
-	public void postInit() {
-		
-		super.postInit();
-		newBlock.StartupClientOnly.postInitClientOnly();
-		poorDiamondOre.StartupClientOnly.postInitClientOnly();
-		basicCrusher.StartupClientOnly.postInitClientOnly();
-		richDiamondOre.StartupClientOnly.postInitClientOnly();
-		richRedstoneOre.StartupClientOnly.postInitClientOnly();
-	}
-	
-	
-	
-}
->>>>>>> 353bcad194114ce4cfeaa102bcbe64cd48d589f1
