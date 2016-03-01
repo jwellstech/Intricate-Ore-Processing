@@ -44,6 +44,7 @@ public class BasicCrusher extends Block {
 	}
 	
 	public final boolean isCrushing = true;
+	public static World par1World;
 	
 	
 	@Override
@@ -78,21 +79,22 @@ public class BasicCrusher extends Block {
 		return 3;
 	}
 
-	public static void changeBlockBasedOnCrushingStatus(World worldObj, BlockPos pos, World worldIn, Random rand) {
-		
-	  
-
+	
+	@SideOnly(Side.CLIENT)
+	public void randomDisplayTick(World worldIn, BlockPos pos, Random rand)
+	{
 	            double d0 = (double)pos.getX() + 0.5D;
 	            double d1 = (double)pos.getY() + rand.nextDouble() * 6.0D / 16.0D;
 	            double d2 = (double)pos.getZ() + 0.5D;
 	            double d3 = 0.52D;
 	            double d4 = rand.nextDouble() * 0.6D - 0.3D;
+	            
 	            worldIn.spawnParticle(EnumParticleTypes.SMOKE_NORMAL, d0, d1 + 1, d2, 0.0D, 0.0D, 0.0D, new int[0]);
 	            worldIn.spawnParticle(EnumParticleTypes.FLAME, d0 - d3, d1, d2 + d4, 0.0D, 0.0D, 0.0D, new int[0]);
 	            worldIn.spawnParticle(EnumParticleTypes.FLAME, d0 + d3, d1, d2 + d4, 0.0D, 0.0D, 0.0D, new int[0]);
 	            worldIn.spawnParticle(EnumParticleTypes.FLAME, d0 + d4, d1, d2 - d3, 0.0D, 0.0D, 0.0D, new int[0]);
 	            worldIn.spawnParticle(EnumParticleTypes.FLAME, d0 + d4, d1, d2 + d3, 0.0D, 0.0D, 0.0D, new int[0]);
-	            
-	        }
-	    }
+
+	}
+}
 		

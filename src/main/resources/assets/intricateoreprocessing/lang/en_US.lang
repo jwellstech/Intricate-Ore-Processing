@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 tile.newBlock.name=New Block
 tile.poorDiamondOre.name=Poor Diamond Ore
 tile.poorCoalOre.name=Poor Coal Ore
@@ -14,11 +13,6 @@ tile.richGoldOre.name=Rich Gold Ore
 tile.richIronOre.name=Rich Iron Ore
 tile.richLapisOre.name=Rich Lapis Ore
 tile.richRedstoneOre.name=Rich Redstone Ore
-=======
-tile.newBlock.name=New Block
-tile.poorDiamondOre.name=Poor Diamond Ore
+
 tile.basicCrusher.name=Basic Crusher
-tile.richDiamondOre.name=Rich Diamond Ore
-tile.richRedstoneOre.name=Rich Redstone Ore
 tile.basicCrusherLit.name=Basic Crusher Lit
->>>>>>> 353bcad194114ce4cfeaa102bcbe64cd48d589f1

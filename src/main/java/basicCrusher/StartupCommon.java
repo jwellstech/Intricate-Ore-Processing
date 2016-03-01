@@ -5,6 +5,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class StartupCommon {
 
 	public static BasicCrusher blockBasicCrusher;
+	public static BasicCrusher blockBasicCrusherLit;
 	
 	
 	
@@ -13,6 +14,8 @@ public class StartupCommon {
 		blockBasicCrusher = (BasicCrusher)(new BasicCrusher().setUnlocalizedName("basicCrusher"));
 		GameRegistry.registerBlock(blockBasicCrusher, "basicCrusher");
 		
+		blockBasicCrusherLit = (BasicCrusher)(new BasicCrusher().setUnlocalizedName("basicCrusherLit"));
+		GameRegistry.registerBlock(blockBasicCrusherLit, "basicCrusherLit");
 		
 	}
 	

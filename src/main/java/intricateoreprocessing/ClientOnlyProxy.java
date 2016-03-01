@@ -7,6 +7,7 @@ public class ClientOnlyProxy extends CommonProxy{
 		super.preInit();
 		
 		newBlock.StartupClientOnly.preInitClientOnly();
+		basicCrusher.StartupClientOnly.preInitClientOnly();
 		poorDiamondOre.StartupClientOnly.preInitClientOnly();
 		poorCoalOre.StartupClientOnly.preInitClientOnly();
 		poorEmeraldOre.StartupClientOnly.preInitClientOnly();
@@ -28,6 +29,7 @@ public class ClientOnlyProxy extends CommonProxy{
 		
 		super.init();
 		newBlock.StartupClientOnly.initClientOnly();
+		basicCrusher.StartupClientOnly.initClientOnly();
 		poorDiamondOre.StartupClientOnly.initClientOnly();
 		poorCoalOre.StartupClientOnly.initClientOnly();
 		poorEmeraldOre.StartupClientOnly.initClientOnly();
@@ -48,6 +50,7 @@ public class ClientOnlyProxy extends CommonProxy{
 		
 		super.postInit();
 		newBlock.StartupClientOnly.postInitClientOnly();
+		basicCrusher.StartupClientOnly.postInitClientOnly();
 		poorDiamondOre.StartupClientOnly.postInitClientOnly();
 		poorCoalOre.StartupClientOnly.postInitClientOnly();
 		poorEmeraldOre.StartupClientOnly.postInitClientOnly();

@@ -4,6 +4,7 @@ public abstract class CommonProxy {
 
 	public void preInit() {
 		newBlock.StartupCommon.preInitCommon();
+		basicCrusher.StartupCommon.preInitCommon();
 		poorDiamondOre.StartupCommon.preInitCommon();
 		poorCoalOre.StartupCommon.preInitCommon();
 		poorEmeraldOre.StartupCommon.preInitCommon();
@@ -23,6 +24,7 @@ public abstract class CommonProxy {
 	public void init() {
 		
 		newBlock.StartupCommon.initCommon();
+		basicCrusher.StartupCommon.initCommon();
 		poorDiamondOre.StartupCommon.initCommon();
 		poorCoalOre.StartupCommon.initCommon();
 		poorEmeraldOre.StartupCommon.initCommon();
@@ -41,6 +43,7 @@ public abstract class CommonProxy {
 	
 	public void postInit() {
 		newBlock.StartupCommon.postInitCommon();
+		basicCrusher.StartupCommon.postInitCommon();
 		poorDiamondOre.StartupCommon.postInitCommon();
 		poorCoalOre.StartupCommon.postInitCommon();
 		poorEmeraldOre.StartupCommon.postInitCommon();
