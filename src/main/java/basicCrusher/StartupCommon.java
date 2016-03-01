@@ -11,10 +11,10 @@ public class StartupCommon {
 	
 	public static void preInitCommon() {
 		
-		blockBasicCrusher = (BasicCrusher)(new BasicCrusher().setUnlocalizedName("basicCrusher"));
+		blockBasicCrusher = (BasicCrusher)(new BasicCrusher(false).setUnlocalizedName("basicCrusher"));
 		GameRegistry.registerBlock(blockBasicCrusher, "basicCrusher");
 		
-		blockBasicCrusherLit = (BasicCrusher)(new BasicCrusher().setUnlocalizedName("basicCrusherLit"));
+		blockBasicCrusherLit = (BasicCrusher)(new BasicCrusher(false).setUnlocalizedName("basicCrusherLit"));
 		GameRegistry.registerBlock(blockBasicCrusherLit, "basicCrusherLit");
 		
 	}

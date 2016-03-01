@@ -31,21 +31,23 @@ import net.minecraft.util.EnumWorldBlockLayer;
 import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
-//import basicCrusher.TileEntityBasicCrusher;
+import basicCrusher.TileEntityBasicCrusher;
 
-public class BasicCrusher extends Block {
-	public BasicCrusher() {
+public class BasicCrusher extends BlockContainer {
+
+	public final boolean isCrushing;
+	private static boolean keepInventory;
+
+	public BasicCrusher(boolean isCrushing) {
 		super(Material.rock);
 		setCreativeTab(CreativeTabs.tabDecorations);
 		setHarvestLevel("pickaxe", 0);
 		setHardness(3.5F);
 		setResistance(17.5F);
 		setStepSound(soundTypePiston);
+		this.setDefaultState(this.blockState.getBaseState());
+		this.isCrushing = isCrushing;
 	}
-	
-	public final boolean isCrushing = true;
-	public static World par1World;
-	
 	
 	@Override
     public Item getItemDropped(
@@ -55,14 +57,87 @@ public class BasicCrusher extends Block {
     {
         return Item.getItemFromBlock(this);
     }
+	
+	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, float hitX, float hitY, float hitZ)
+	{
+		if(worldIn.isRemote) {
+			return true;
+		}
+		else {
+			TileEntity tileentity = worldIn.getTileEntity(pos);
+			
+			if(tileentity instanceof TileEntityBasicCrusher)
+			{
+				playerIn.displayGUIChest((TileEntityBasicCrusher)tileentity);
+			}
+			return true;
+		}
+	}
+	
+	public static void setState(boolean active, World worldIn, BlockPos pos)
+	{
+		IBlockState iblockstate = worldIn.getBlockState(pos);
+		TileEntity tileentity = worldIn.getTileEntity(pos);
+		keepInventory = true;
+		
+		if(active) {
+			worldIn.setBlockState(pos, basicCrusher.StartupCommon.blockBasicCrusherLit.getDefaultState());
+		}
+		else {
+			worldIn.setBlockState(pos, basicCrusher.StartupCommon.blockBasicCrusher.getDefaultState());
+		}
+		
+		keepInventory = false;
+		
+		if (tileentity != null)
+		{
+			tileentity.validate();
+			worldIn.setTileEntity(pos, tileentity);
+		}
+		
+	}
+	
+	public TileEntity createNewTileEntity(World worldIn, int meta) {
+		return new TileEntityBasicCrusher();
+	}
+	
+	public IBlockState onBlockPlaced(World worldIn, BlockPos pos, EnumFacing facing, float hitX, float hitY, float hitZ, int meta, EntityLivingBase player) {
+		return this.getDefaultState();
+	}
 
+	public void breakBlock(World worldIn, BlockPos pos, IBlockState state) {
+		if(!keepInventory) {
+			TileEntity tileentity = worldIn.getTileEntity(pos);
+			
+			if(tileentity instanceof TileEntityFurnace) {
+				InventoryHelper.dropInventoryItems(worldIn, pos, (TileEntityFurnace)tileentity);
+				worldIn.updateComparatorOutputLevel(pos, this);
+			}
+		}
 
-    @Override
-    @SideOnly(Side.CLIENT)
-    public Item getItem(World worldIn, BlockPos pos)
-    {
-        return Item.getItemFromBlock(this);
-    }
+		super.breakBlock(worldIn, pos, state);
+	}
+	
+	public boolean hasComparatorInputOverride() {
+		return true;
+	}
+	
+	public int getComparatorInputOverride(World worldIn,BlockPos pos) {
+		return Container.calcRedstone(worldIn.getTileEntity(pos));
+	}
+	
+	@SideOnly(Side.CLIENT)
+	public Item getItem(World worldIn, BlockPos pos) {
+		return Item.getItemFromBlock(basicCrusher.StartupCommon.blockBasicCrusher);
+	}
+	
+
+//    @Override
+//    @SideOnly(Side.CLIENT)
+//    public Item getItem(World worldIn, BlockPos pos)
+//    {
+//        return Item.getItemFromBlock(this);
+//    }
 
 	@Override
 	public boolean isOpaqueCube() {
