@@ -1,0 +1,45 @@
+- [ ] Design Flow Charts For The Following Ores and Decide on Processes
+  - [x] Iron
+    - [ ] Double Iron
+  - [ ] Coal
+  - [x] Gold
+    - [ ] Double Gold
+  - [ ] Diamond
+  - [ ] Emerald
+  - [ ] Redstone
+  - [ ] Lapis
+    - [ ] Fortune ?
+  - [x] Copper
+    - [ ] Double Copper
+  - [ ] Tin
+    - [ ] Double Tin
+  - [ ] Aluminum
+    - [ ] Double Aluminum
+  - [ ] Zinc ? Anything else?
+- [ ] Textures
+  - [x] Copper
+  - [x] Copper, poor
+  - [ ] Copper, rich
+  - [x] Tin
+  - [x] Tin, poor
+  - [ ] Tin, rich
+  - [ ] Lapis, poor
+  - [x] Lapis, rich
+  - [x] Redstone, poor
+  - [x] Redstone, rich
+  - [x] Iron, poor
+  - [ ] Iron, rich
+  - [x] Gold, poor
+  - [ ] Gold, rich
+  - [x] Diamond, poor
+  - [x] Diamond, rich 
+  - [ ] Coal, poor
+  - [x] Coal, rich
+  - [x] Emerald, poor
+  - [x] Emerald, rich
+- [ ] Figure out how to get a multiblock structure
+- [ ] Decide on power sources (Coal, windmills, watermills, etc.)
+- [ ] Make a functional GUI
+- [ ] Decide on textures
+- [ ] Design a book that will teach the user how to make stuff, as they go along it will unlock more pages. Include somthing like the thaumcraft multiblock gui construction. Ex: http://vignette3.wikia.nocookie.net/thaumcraft-3/images/1/1a/Infernal_Furnace_Crafting.png/revision/latest?cb=20121228050818
+- [ ] TBD

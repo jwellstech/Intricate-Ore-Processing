@@ -1,0 +1,13 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"down": "intricateoreprocessing:blocks/basicCrusherBottom",
+		"up": "intricateoreprocessing:blocks/basicCrusherTop",
+		"north": "intricateoreprocessing:blocks/basicCrusherSideLit",
+		"east": "intricateoreprocessing:blocks/basicCrusherSideLit",
+		"south": "intricateoreprocessing:blocks/basicCrusherSideLit",
+		"west": "intricateoreprocessing:blocks/basicCrusherSideLit",
+		"particle": "intricateoreprocessing:blocks/basicCrusherSide"
+	}
+
+}

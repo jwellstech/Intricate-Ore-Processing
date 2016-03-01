@@ -1,0 +1,13 @@
+{
+	"parent": "block/cube",
+	"textures": {
+		"down": "intricateoreprocessing:blocks/newBlockPic",
+		"up": "intricateoreprocessing:blocks/newBlockPic",
+		"north": "intricateoreprocessing:blocks/newBlockPic",
+		"east": "intricateoreprocessing:blocks/newBlockPic",
+		"south": "intricateoreprocessing:blocks/newBlockPic",
+		"west": "intricateoreprocessing:blocks/newBlockPic",
+		"particle": "blocks/lapis_block"
+	}
+
+}

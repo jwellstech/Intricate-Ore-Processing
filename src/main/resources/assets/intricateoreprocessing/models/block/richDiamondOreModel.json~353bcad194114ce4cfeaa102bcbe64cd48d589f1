@@ -1,0 +1,13 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "down": "intricateoreprocessing:blocks/richDiamondOre",
+        "up": "intricateoreprocessing:blocks/richDiamondOre",
+        "north": "intricateoreprocessing:blocks/richDiamondOre",
+        "east": "intricateoreprocessing:blocks/richDiamondOre",
+        "south": "intricateoreprocessing:blocks/richDiamondOre",
+        "west": "intricateoreprocessing:blocks/richDiamondOre",
+        "particle": "intricateoreprocessing:blocks/richDiamondOre"
+    }
+
+}

@@ -1,0 +1,13 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "down": "intricateoreprocessing:blocks/poorRedstoneOre",
+        "up": "intricateoreprocessing:blocks/poorRedstoneOre",
+        "north": "intricateoreprocessing:blocks/poorRedstoneOre",
+        "east": "intricateoreprocessing:blocks/poorRedstoneOre",
+        "south": "intricateoreprocessing:blocks/poorRedstoneOre",
+        "west": "intricateoreprocessing:blocks/poorRedstoneOre",
+        "particle": "intricateoreprocessing:blocks/poorRedstoneOre"
+    }
+
+}
