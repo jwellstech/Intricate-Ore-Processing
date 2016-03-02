@@ -6,8 +6,8 @@ public class ClientOnlyProxy extends CommonProxy{
 		
 		super.preInit();
 		
-		newBlock.StartupClientOnly.preInitClientOnly();
-		basicCrusher.StartupClientOnly.preInitClientOnly();
+//		newBlock.StartupClientOnly.preInitClientOnly();
+//		basicCrusher.StartupClientOnly.preInitClientOnly();
 		poorDiamondOre.StartupClientOnly.preInitClientOnly();
 		poorCoalOre.StartupClientOnly.preInitClientOnly();
 		poorEmeraldOre.StartupClientOnly.preInitClientOnly();
@@ -22,14 +22,15 @@ public class ClientOnlyProxy extends CommonProxy{
 		richLapisOre.StartupClientOnly.preInitClientOnly();
 		richGoldOre.StartupClientOnly.preInitClientOnly();
 		richRedstoneOre.StartupClientOnly.preInitClientOnly();
+		limestone.StartupClientOnly.preInitClientOnly();
 	}
 	
 	
 	public void init() {
 		
 		super.init();
-		newBlock.StartupClientOnly.initClientOnly();
-		basicCrusher.StartupClientOnly.initClientOnly();
+//		newBlock.StartupClientOnly.initClientOnly();
+//		basicCrusher.StartupClientOnly.initClientOnly();
 		poorDiamondOre.StartupClientOnly.initClientOnly();
 		poorCoalOre.StartupClientOnly.initClientOnly();
 		poorEmeraldOre.StartupClientOnly.initClientOnly();
@@ -44,13 +45,14 @@ public class ClientOnlyProxy extends CommonProxy{
 		richLapisOre.StartupClientOnly.initClientOnly();
 		richGoldOre.StartupClientOnly.initClientOnly();
 		richRedstoneOre.StartupClientOnly.initClientOnly();
+		limestone.StartupClientOnly.initClientOnly();
 	}
 	
 	public void postInit() {
 		
 		super.postInit();
-		newBlock.StartupClientOnly.postInitClientOnly();
-		basicCrusher.StartupClientOnly.postInitClientOnly();
+//		newBlock.StartupClientOnly.postInitClientOnly();
+//		basicCrusher.StartupClientOnly.postInitClientOnly();
 		poorDiamondOre.StartupClientOnly.postInitClientOnly();
 		poorCoalOre.StartupClientOnly.postInitClientOnly();
 		poorEmeraldOre.StartupClientOnly.postInitClientOnly();
@@ -65,6 +67,7 @@ public class ClientOnlyProxy extends CommonProxy{
 		richLapisOre.StartupClientOnly.postInitClientOnly();
 		richGoldOre.StartupClientOnly.postInitClientOnly();
 		richRedstoneOre.StartupClientOnly.postInitClientOnly();
+		limestone.StartupClientOnly.postInitClientOnly();
 	}
 	
 	

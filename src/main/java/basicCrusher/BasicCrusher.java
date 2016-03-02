@@ -4,6 +4,7 @@ import java.util.Random;
 
 
 import intricateoreprocessing.Intricateoreprocessing;
+import intricateoreprocessing.Intricateoreprocessing.GUI_ENUM;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.ITileEntityProvider;
@@ -32,6 +33,7 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import basicCrusher.TileEntityBasicCrusher;
+import ibxm.Player;
 
 public class BasicCrusher extends BlockContainer {
 
@@ -58,21 +60,22 @@ public class BasicCrusher extends BlockContainer {
         return Item.getItemFromBlock(this);
     }
 	
-	public boolean onBlockActivated(World worldIn, BlockPos pos, IBlockState state, EntityPlayer playerIn, float hitX, float hitY, float hitZ)
+	public boolean onBlockActivated(World world, BlockPos pos, IBlockState state, EntityPlayer player, float x, float y, float z)
 	{
-		if(worldIn.isRemote) {
-			return true;
-		}
-		else {
-			TileEntity tileentity = worldIn.getTileEntity(pos);
+		System.out.println("Does this file even load");
+		if (!world.isRemote)
+        {
+			player.openGui(intricateoreprocessing.Intricateoreprocessing.instance, intricateoreprocessing.Intricateoreprocessing.GUI_ENUM.BasicCrusher.ordinal(), world, pos.getX(), pos.getY(), pos.getZ());
 			
-			if(tileentity instanceof TileEntityBasicCrusher)
-			{
-				playerIn.displayGUIChest((TileEntityBasicCrusher)tileentity);
-			}
-			return true;
-		}
+        }
+        else
+        {
+			TileEntity tileentity = world.getTileEntity(pos);
+				
+        }
+		return true;
 	}
+	
 	
 	public static void setState(boolean active, World worldIn, BlockPos pos)
 	{
@@ -96,7 +99,7 @@ public class BasicCrusher extends BlockContainer {
 		}
 		
 	}
-	
+	@Override
 	public TileEntity createNewTileEntity(World worldIn, int meta) {
 		return new TileEntityBasicCrusher();
 	}
