@@ -4,14 +4,8 @@ import net.minecraftforge.fml.common.network.NetworkRegistry;
 
 public abstract class CommonProxy {
 
-	
-	
-	
-	
-	
 	public void preInit() {
-//		newBlock.StartupCommon.preInitCommon();
-//		basicCrusher.StartupCommon.preInitCommon();
+		ModItems.createItems();
 		poorDiamondOre.StartupCommon.preInitCommon();
 		poorCoalOre.StartupCommon.preInitCommon();
 		poorEmeraldOre.StartupCommon.preInitCommon();
@@ -26,13 +20,10 @@ public abstract class CommonProxy {
 		richLapisOre.StartupCommon.preInitCommon();
 		richGoldOre.StartupCommon.preInitCommon();
 		richRedstoneOre.StartupCommon.preInitCommon();
-		limestone.StartupCommon.preInitCommon();
 	}	
 	
 	public void init() {
 		
-//		newBlock.StartupCommon.initCommon();
-//		basicCrusher.StartupCommon.initCommon();
 		poorDiamondOre.StartupCommon.initCommon();
 		poorCoalOre.StartupCommon.initCommon();
 		poorEmeraldOre.StartupCommon.initCommon();
@@ -47,13 +38,10 @@ public abstract class CommonProxy {
 		richLapisOre.StartupCommon.initCommon();
 		richGoldOre.StartupCommon.initCommon();
 		richRedstoneOre.StartupCommon.initCommon();
-		limestone.StartupCommon.initCommon();
 		
 	}
 	
 	public void postInit() {
-//		newBlock.StartupCommon.postInitCommon();
-//		basicCrusher.StartupCommon.postInitCommon();
 		poorDiamondOre.StartupCommon.postInitCommon();
 		poorCoalOre.StartupCommon.postInitCommon();
 		poorEmeraldOre.StartupCommon.postInitCommon();
@@ -68,6 +56,5 @@ public abstract class CommonProxy {
 		richEmeraldOre.StartupCommon.postInitCommon();
 		richGoldOre.StartupCommon.postInitCommon();
 		richRedstoneOre.StartupCommon.postInitCommon();
-		limestone.StartupCommon.postInitCommon();
 	}
 }

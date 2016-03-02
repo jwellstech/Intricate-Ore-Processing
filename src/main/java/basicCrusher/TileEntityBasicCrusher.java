@@ -1,6 +1,5 @@
 package basicCrusher;
 
-import intricateoreprocessing.Intricateoreprocessing;
 import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.entity.player.InventoryPlayer;
@@ -363,10 +362,5 @@ public class TileEntityBasicCrusher extends TileEntityLockable implements ITicka
 			else
 				return (T) handlerSide;
 		return super.getCapability(capability, facing);
-	}
-
-	@Override
-	public String getGuiID() {
-		return "BasicCrusher";
 	}
 }
