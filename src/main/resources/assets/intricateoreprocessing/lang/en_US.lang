@@ -13,6 +13,7 @@ tile.richGoldOre.name=Rich Gold Ore
 tile.richIronOre.name=Rich Iron Ore
 tile.richLapisOre.name=Rich Lapis Ore
 tile.richRedstoneOre.name=Rich Redstone Ore
+tile.limestone.name=Limestone
 
 tile.basicCrusher.name=Basic Crusher
 tile.basicCrusherLit.name=Basic Crusher Lit
