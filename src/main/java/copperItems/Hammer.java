@@ -10,7 +10,7 @@ public class Hammer extends Item {
 		
 		this.setMaxStackSize(1);
 		this.setMaxDamage(32);
-		this.onItemRightClick(itemStackIn, worldIn, playerIn){itemStackIn.damageItem(1,playerIn);}
+//		this.onItemRightClick(itemStackIn, worldIn, playerIn){itemStackIn.damageItem(1,playerIn);}
 		this.setUnlocalizedName(unlocalizedName);
 		this.setCreativeTab(CreativeTabs.tabMisc);
 	}

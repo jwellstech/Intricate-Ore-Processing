@@ -13,6 +13,7 @@ tile.richGoldOre.name=Rich Gold Ore
 tile.richIronOre.name=Rich Iron Ore
 tile.richLapisOre.name=Rich Lapis Ore
 tile.richRedstoneOre.name=Rich Redstone Ore
+tile.limestone.name=Limestone
 item.calcine.name=Calcine
 item.limestoneShard.name=Limestone Shard
 item.chalcopyrite.name=Chalcopyrite

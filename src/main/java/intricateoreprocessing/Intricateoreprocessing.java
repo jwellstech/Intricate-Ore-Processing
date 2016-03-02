@@ -1,6 +1,6 @@
 package intricateoreprocessing;
 
-import basicCrusher.TileEntityBasicCrusher;
+//import basicCrusher.TileEntityBasicCrusher;
 //import basicCrusher.BasicCrusher;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -39,13 +39,13 @@ public class Intricateoreprocessing {
 		public static void preInit(FMLPreInitializationEvent event)
 		{
 			proxy.preInit();
-			GameRegistry.registerTileEntity(TileEntityBasicCrusher.class, "tileEntityBasicCrusher");
+//			GameRegistry.registerTileEntity(TileEntityBasicCrusher.class, "tileEntityBasicCrusher");
 			GameRegistry.registerWorldGenerator(new WorldGenerator(), 0);
 		}
 		@EventHandler
 		public static void Init(FMLInitializationEvent event)
 		{
-			NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
+//			NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 
 			proxy.init();
 		}

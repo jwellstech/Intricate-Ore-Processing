@@ -4,8 +4,8 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class StartupCommon {
 
-	public static BasicCrusher blockBasicCrusher;
-	public static BasicCrusher blockBasicCrusherLit;
+//	public static BasicCrusher blockBasicCrusher;
+//	public static BasicCrusher blockBasicCrusherLit;
 	
 	
 	
