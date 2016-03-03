@@ -1,6 +1,10 @@
 package intricateoreprocessing;
 
 //import basicCrusher.TileEntityBasicCrusher;
+import init.ModRecipes;
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
 //import basicCrusher.BasicCrusher;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -11,6 +15,8 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import richCoalOre.RichCoalOre;
+import richDiamondOre.RichDiamondOre;
 
 @Mod(modid = Intricateoreprocessing.MODID, version = Intricateoreprocessing.VERSION)
 public class Intricateoreprocessing {
@@ -48,6 +54,9 @@ public class Intricateoreprocessing {
 //			NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 
 			proxy.init();
+			ModRecipes.RegisterRecipes();
+			ModRecipes.removeCraftingRecipes();
+			
 		}
 		@EventHandler
 		public static void postInit(FMLPostInitializationEvent event)
