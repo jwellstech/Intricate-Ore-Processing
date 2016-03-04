@@ -19,6 +19,11 @@ public final class ItemRenderRegister {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.ironSlag, 0, new ModelResourceLocation("intricateoreprocessing:ironSlag", "inventory"));
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.ironLump, 0, new ModelResourceLocation("intricateoreprocessing:ironLump", "inventory"));
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.hammer, 0, new ModelResourceLocation("intricateoreprocessing:hammer", "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.amalgam, 0, new ModelResourceLocation("intricateoreprocessing:amalgam", "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.appleSeed, 0, new ModelResourceLocation("intricateoreprocessing:appleSeed", "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.cyanide, 0, new ModelResourceLocation("intricateoreprocessing:cyanide", "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.diamondCuttingTool, 0, new ModelResourceLocation("intricateoreprocessing:diamondCuttingTool", "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.parrafinOil, 0, new ModelResourceLocation("intricateoreprocessing:parrafinOil", "inventory"));
 	}
 
 }
