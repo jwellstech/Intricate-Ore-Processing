@@ -10,6 +10,7 @@ public final class ItemRenderRegister {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.limestoneShard, 0, new ModelResourceLocation("intricateoreprocessing:limestoneShard", "inventory"));
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.chalcopyrite, 0, new ModelResourceLocation("intricateoreprocessing:chalcopyrite", "inventory"));
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.groundCopper, 0, new ModelResourceLocation("intricateoreprocessing:groundCopper", "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.groundGold, 0, new ModelResourceLocation("intricateoreprocessing:groundGold", "inventory"));
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.copperIngot, 0, new ModelResourceLocation("intricateoreprocessing:copperIngot", "inventory"));
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.copperMatte, 0, new ModelResourceLocation("intricateoreprocessing:copperMatte", "inventory"));
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.groundIron, 0, new ModelResourceLocation("intricateoreprocessing:groundIron", "inventory"));

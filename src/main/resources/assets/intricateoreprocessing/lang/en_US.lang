@@ -18,6 +18,7 @@ item.calcine.name=Calcine
 item.limestoneShard.name=Limestone Shard
 item.chalcopyrite.name=Chalcopyrite
 item.groundCopper.name=Ground Copper
+item.groundGold.name=Ground Gold
 item.copperMatte.name=Copper Matte
 item.copperIngot.name=Copper Ingot
 item.groundIron.name=Ground Iron
@@ -38,4 +39,4 @@ item.uncommonMedicinalHerb.name=Uncommon Medicinal Herb
 item.epicMedicinalHerb.name=Epic Medicinal Herb
 item.rareMedicinalHerb.name=Rare Medicinal Herb
 item.legendaryMedicinalHerb.name=Legendary Medicinal Herb
-item.kush.name=Mystic Medicinal Herb
+item.kush.name=Mystic Medicinal Herbtile.mountainLily.name=Mountain Lily

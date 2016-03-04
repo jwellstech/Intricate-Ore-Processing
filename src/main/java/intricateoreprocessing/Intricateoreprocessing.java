@@ -47,7 +47,7 @@ public class Intricateoreprocessing {
 		public static void preInit(FMLPreInitializationEvent event)
 		{
 			proxy.preInit();
-//			GameRegistry.registerTileEntity(TileEntityBasicCrusher.class, "tileEntityBasicCrusher");
+//			GameRegistry.registerTileEntity(TileEntityBasicCrusher.class, "tileEntityBasicCrusher");wd
 			GameRegistry.registerWorldGenerator(new WorldGenerator(), 0);
 		}
 		@EventHandler
@@ -59,6 +59,7 @@ public class Intricateoreprocessing {
 			MinecraftForge.EVENT_BUS.register(new ModDrops());
 			ModRecipes.RegisterRecipes();
 			ModRecipes.removeCraftingRecipes();
+			ModRecipes.removeSmeltingRecipes();
 			
 		}
 		@EventHandler

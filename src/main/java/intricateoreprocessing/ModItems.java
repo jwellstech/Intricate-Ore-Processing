@@ -12,6 +12,7 @@ import copperItems.Cyanide;
 import copperItems.DiamondCuttingTool;
 import copperItems.EpicMedicinalHerb;
 import copperItems.GroundCopper;
+import copperItems.GroundGold;
 import copperItems.GroundIron;
 import copperItems.Hammer;
 import copperItems.IronLump;
@@ -36,6 +37,7 @@ public final class ModItems {
 	public static Item limestoneShard;
 	public static Item chalcopyrite;
 	public static Item groundCopper;
+	public static Item groundGold;
 	public static Item copperIngot;
 	public static Item copperMatte;
 	public static Item groundIron;
@@ -63,6 +65,7 @@ public final class ModItems {
 		GameRegistry.registerItem(limestoneShard = new LimestoneShard("limestoneShard"), "limestoneShard");
 		GameRegistry.registerItem(chalcopyrite = new Chalcopyrite("chalcopyrite"), "chalcopyrite");
 		GameRegistry.registerItem(groundCopper = new GroundCopper("groundCopper"), "groundCopper");
+		GameRegistry.registerItem(groundGold = new GroundGold("groundGold"), "groundGold");
 		GameRegistry.registerItem(copperIngot = new CopperIngot("copperIngot"), "copperIngot");
 		GameRegistry.registerItem(copperMatte = new CopperMatte("copperMatte"), "copperMatte");
 		GameRegistry.registerItem(groundIron = new GroundIron("groundIron"), "groundIron");
