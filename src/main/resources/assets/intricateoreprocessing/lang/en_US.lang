@@ -31,4 +31,6 @@ item.amalgam.name=Amalgam
 item.appleSeed.name=Apple Seed
 item.cyanide.name=Cyanide
 item.diamondCuttingTool.name=Diamond Cutting Tool
-item.parrafinOil.name=Paraffin Oiltile.mountainLily.name=Mountain Lily
+item.parrafinOil.name=Paraffin Oil
+item.beefStew.name=Beef Stew
+tile.mountainLily.name=Mountain Lily

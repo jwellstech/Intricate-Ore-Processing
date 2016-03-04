@@ -2,6 +2,7 @@ package intricateoreprocessing;
 
 import copperItems.Amalgam;
 import copperItems.AppleSeed;
+import copperItems.BeefStew;
 import copperItems.Calcine;
 import copperItems.Chalcopyrite;
 import copperItems.CopperIngot;
@@ -19,6 +20,9 @@ import copperItems.RoughDiamond;
 import copperItems.Sandpaper;
 import copperItems.UncutDiamond;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public final class ModItems {
@@ -41,6 +45,8 @@ public final class ModItems {
 	public static Item cyanide;
 	public static Item diamondCuttingTool;
 	public static Item parrafinOil;
+	public static Item beefStew;
+	
 	
 	public static void createItems() {
 		GameRegistry.registerItem(calcine = new Calcine("calcine"), "calcine");
@@ -61,6 +67,11 @@ public final class ModItems {
 		GameRegistry.registerItem(cyanide = new Cyanide("cyanide"), "cyanide");
 		GameRegistry.registerItem(diamondCuttingTool = new DiamondCuttingTool("diamondCuttingTool"), "diamondCuttingTool");
 		GameRegistry.registerItem(parrafinOil = new ParrafinOil("parrafinOil"), "parrafinOil");
+
+		//Food Items																				.setAlwaysEdible() would go here.
+		GameRegistry.registerItem(beefStew = new BeefStew("beefStew", 12, 1.5f, false).setPotionEffect(Potion.regeneration.id, 8, 0, 0.40F).setPotionEffect(Potion.regeneration.id, 15, 0, 0.30F).setPotionEffect(Potion.regeneration.id, (int) 7.5, 1, 0.20F).setPotionEffect(Potion.regeneration.id, 4, 2, 0.10F), "beefStew");
+				// EX .addPotionEffect(new PotionEffect(Potion.<potion>.id, ticks, amplifier, chanceF))
+	
 	}
 
 }

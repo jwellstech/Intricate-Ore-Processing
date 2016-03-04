@@ -24,6 +24,8 @@ public final class ItemRenderRegister {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.cyanide, 0, new ModelResourceLocation("intricateoreprocessing:cyanide", "inventory"));
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.diamondCuttingTool, 0, new ModelResourceLocation("intricateoreprocessing:diamondCuttingTool", "inventory"));
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.parrafinOil, 0, new ModelResourceLocation("intricateoreprocessing:parrafinOil", "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.beefStew, 0, new ModelResourceLocation("intricateoreprocessing:beefStew", "inventory"));
+
 	}
 
 }

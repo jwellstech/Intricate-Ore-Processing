@@ -21,7 +21,7 @@ public class ModRecipes {
 		addSmeltingRecipes();
 	}
 	private static void addCraftingRecipes() {
-		GameRegistry.addRecipe(new ItemStack(Blocks.obsidian),"AAA","AAA","AAA",'A', Blocks.diamond_block);
+//		GameRegistry.addRecipe(new ItemStack(Blocks.obsidian),"AAA","AAA","AAA",'A', Blocks.diamond_block);
 		//COPPER PROCESS
 //		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.groundCopper), new ItemStack(ModItems.hammer, 1, OreDictionary.WILDCARD_VALUE), copperOre);
 //		GameRegistry.addRecipe(new ItemStack(ModItems.chalcopyrite), ModItems.groundCopper, ModItems.parrafinOil);
@@ -49,6 +49,7 @@ public class ModRecipes {
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.uncutDiamond, 2), new ItemStack(ModItems.hammer, 1, OreDictionary.WILDCARD_VALUE), richDiamondOre.StartupCommon.blockRichDiamondOre);
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.roughDiamond), new ItemStack(Items.shears, 1, OreDictionary.WILDCARD_VALUE), ModItems.uncutDiamond);
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.diamond), new ItemStack(ModItems.sandpaper, 1, OreDictionary.WILDCARD_VALUE), ModItems.roughDiamond);
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.roughDiamond, 1), new ItemStack(ModItems.diamondCuttingTool, 1, OreDictionary.WILDCARD_VALUE), ModItems.uncutDiamond);
 		
 		//LAPIS LAZULI PROCESS
 		GameRegistry.addShapelessRecipe(new ItemStack(Items.dye, 6, 4), new ItemStack(ModItems.hammer, 1, OreDictionary.WILDCARD_VALUE), poorLapisOre.StartupCommon.blockPoorLapisOre, poorLapisOre.StartupCommon.blockPoorLapisOre);
@@ -61,6 +62,7 @@ public class ModRecipes {
 		GameRegistry.addShapedRecipe(new ItemStack(ModItems.hammer), "AAA", "AAA", " B ", 'A', Blocks.cobblestone, 'B', Items.stick);
 		GameRegistry.addShapedRecipe(new ItemStack(ModItems.sandpaper), "A", "B", "A", 'A', Blocks.sand, 'B', Items.paper, 'A', Blocks.sand);
 		GameRegistry.addShapedRecipe(new ItemStack(ModItems.diamondCuttingTool), " A", "B ", 'A', Items.stick, 'B', Items.diamond);
+		
 		//other recipes
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.roughDiamond), ModItems.uncutDiamond, ModItems.uncutDiamond);
 		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.appleSeed, 4), Items.apple);
@@ -92,6 +94,7 @@ public class ModRecipes {
 //		GameRegistry.addSmelting(inputBlock/Item/ItemStack, new ItemStack(outputBlock/Item/ItemStack, amountOutputted), XPEarned)
 		//COPPER PROCESS
 		//IRON PROCESS
+		GameRegistry.addSmelting(ModItems.ironLump, new ItemStack(ModItems.ironSlag), 0.5F);
 		//GOLD PROCESS
 		//REDSTSONE PROCESS
 		//DIAMOND PROCESS

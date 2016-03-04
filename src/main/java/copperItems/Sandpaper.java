@@ -10,7 +10,7 @@ public class Sandpaper extends Item {
 		super();
 
 		this.setMaxStackSize(1);
-		this.setMaxDamage(16);
+		this.setMaxDamage(15);
 		this.setUnlocalizedName(unlocalizedName);
 		this.setCreativeTab(CreativeTabs.tabMisc);
 	}
