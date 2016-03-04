@@ -33,4 +33,9 @@ item.cyanide.name=Cyanide
 item.diamondCuttingTool.name=Diamond Cutting Tool
 item.parrafinOil.name=Paraffin Oil
 item.beefStew.name=Beef Stew
-tile.mountainLily.name=Mountain Lily
+tile.mountainLily.name=Mountain Lilyitem.commonMedicinalHerb.name=Common Medicinal Herb
+item.uncommonMedicinalHerb.name=Uncommon Medicinal Herb
+item.epicMedicinalHerb.name=Epic Medicinal Herb
+item.rareMedicinalHerb.name=Rare Medicinal Herb
+item.legendaryMedicinalHerb.name=Legendary Medicinal Herb
+item.kush.name=Mystic Medicinal Herb

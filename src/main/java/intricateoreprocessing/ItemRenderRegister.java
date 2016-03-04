@@ -25,7 +25,12 @@ public final class ItemRenderRegister {
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.diamondCuttingTool, 0, new ModelResourceLocation("intricateoreprocessing:diamondCuttingTool", "inventory"));
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.parrafinOil, 0, new ModelResourceLocation("intricateoreprocessing:parrafinOil", "inventory"));
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.beefStew, 0, new ModelResourceLocation("intricateoreprocessing:beefStew", "inventory"));
-
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.commonMedicinalHerb, 0, new ModelResourceLocation("intricateoreprocessing:commonMedicinalHerb", "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.uncommonMedicinalHerb, 0, new ModelResourceLocation("intricateoreprocessing:uncommonMedicinalHerb", "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.rareMedicinalHerb, 0, new ModelResourceLocation("intricateoreprocessing:rareMedicinalHerb", "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.epicMedicinalHerb, 0, new ModelResourceLocation("intricateoreprocessing:epicMedicinalHerb", "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.legendaryMedicinalHerb, 0, new ModelResourceLocation("intricateoreprocessing:legendaryMedicinalHerb", "inventory"));
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(ModItems.kush, 0, new ModelResourceLocation("intricateoreprocessing:kush", "inventory"));
 	}
 
 }
