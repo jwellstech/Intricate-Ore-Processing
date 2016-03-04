@@ -21,6 +21,7 @@ public class ClientOnlyProxy extends CommonProxy{
 		richGoldOre.StartupClientOnly.preInitClientOnly();
 		richRedstoneOre.StartupClientOnly.preInitClientOnly();
 		limestone.StartupClientOnly.preInitClientOnly();
+		mountainLily.StartupClientOnly.preInitClientOnly();
 	}
 	
 	
@@ -45,6 +46,7 @@ public class ClientOnlyProxy extends CommonProxy{
 		richGoldOre.StartupClientOnly.initClientOnly();
 		richRedstoneOre.StartupClientOnly.initClientOnly();
 		limestone.StartupClientOnly.initClientOnly();
+		mountainLily.StartupClientOnly.initClientOnly();
 	}
 	
 	public void postInit() {
@@ -65,6 +67,7 @@ public class ClientOnlyProxy extends CommonProxy{
 		richGoldOre.StartupClientOnly.postInitClientOnly();
 		richRedstoneOre.StartupClientOnly.postInitClientOnly();
 		limestone.StartupClientOnly.postInitClientOnly();
+		mountainLily.StartupClientOnly.postInitClientOnly();
 	}
 	
 	

@@ -2,9 +2,12 @@ package intricateoreprocessing;
 
 import java.util.Random;
 
+import mountainLily.MountainLily;
 import net.minecraft.util.BlockPos;
 import net.minecraft.world.World;
+import net.minecraft.world.biome.BiomeGenBase;
 import net.minecraft.world.chunk.IChunkProvider;
+import net.minecraft.world.gen.GeneratorBushFeature;
 import net.minecraft.world.gen.feature.WorldGenMinable;
 import net.minecraftforge.fml.common.IWorldGenerator;
 
@@ -27,6 +30,8 @@ public class WorldGenerator implements IWorldGenerator {
 	
 	}
 	
+	public void flowerGen(Random random, int chunkX, int chunkZ, World world, IChunkProvider chunkGenerator, IChunkProvider chunkProvider) {
+	}
 	private void generateSurface(World world, Random rand, int chunkX, int chunkZ) {
 		for (int k = 0; k < 16; k++) {
 			int firstBlockXCoord = chunkX + rand.nextInt(16);
@@ -38,6 +43,10 @@ public class WorldGenerator implements IWorldGenerator {
 			int pI = rand.nextInt(64);
 			int pL = rand.nextInt(14);
 			int pR = rand.nextInt(24);
+			int highFlower = rand.nextInt(256);
+			
+			BlockPos flower = new BlockPos(firstBlockXCoord, highFlower, firstBlockZCoord);
+
 			
 			BlockPos pdbp = new BlockPos(firstBlockXCoord, pD, firstBlockZCoord);
 			BlockPos intricateoreprocessingPos = new BlockPos(firstBlockXCoord, intricateoreprocessingY, firstBlockZCoord);
@@ -66,7 +75,19 @@ public class WorldGenerator implements IWorldGenerator {
 
 			new WorldGenMinable(limestone.StartupCommon.blockLimestone.getDefaultState(), 25).generate(world, rand, limestonePos);
 			
+			
+			int randPosY = rand.nextInt(256);
+			BlockPos new_pos = new BlockPos(firstBlockXCoord, randPosY, firstBlockZCoord);
+			if (world.getBiomeGenForCoords(new_pos).equals(BiomeGenBase.extremeHills)) {
+			
+			new GeneratorBushFeature((MountainLily)mountainLily.StartupCommon.blockMountainLily).generate(world, rand, new BlockPos(firstBlockXCoord, randPosY, firstBlockZCoord));
+			}
 		}
+		
+		
+		
+		
+		
 		
 	}
 	

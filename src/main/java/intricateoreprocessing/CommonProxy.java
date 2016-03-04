@@ -21,6 +21,7 @@ public abstract class CommonProxy {
 		richGoldOre.StartupCommon.preInitCommon();
 		richRedstoneOre.StartupCommon.preInitCommon();
 		limestone.StartupCommon.preInitCommon();
+		mountainLily.StartupCommon.preInitCommon();
 	}	
 	
 	public void init() {
@@ -41,6 +42,7 @@ public abstract class CommonProxy {
 		richRedstoneOre.StartupCommon.initCommon();
 		limestone.StartupCommon.initCommon();
 		
+		mountainLily.StartupCommon.initCommon();
 	}
 	
 	public void postInit() {
@@ -59,5 +61,6 @@ public abstract class CommonProxy {
 		richGoldOre.StartupCommon.postInitCommon();
 		richRedstoneOre.StartupCommon.postInitCommon();
 		limestone.StartupCommon.postInitCommon();
+		mountainLily.StartupCommon.postInitCommon();
 	}
 }
