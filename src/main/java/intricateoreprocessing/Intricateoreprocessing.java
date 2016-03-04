@@ -1,10 +1,12 @@
 package intricateoreprocessing;
 
+import init.ModDrops;
 //import basicCrusher.TileEntityBasicCrusher;
 import init.ModRecipes;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.common.MinecraftForge;
 //import basicCrusher.BasicCrusher;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -54,6 +56,7 @@ public class Intricateoreprocessing {
 //			NetworkRegistry.INSTANCE.registerGuiHandler(instance, new GuiHandler());
 
 			proxy.init();
+			MinecraftForge.EVENT_BUS.register(new ModDrops());
 			ModRecipes.RegisterRecipes();
 			ModRecipes.removeCraftingRecipes();
 			
